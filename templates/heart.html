@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #navbar ul{
+        padding:5px;
+list-style-type:none;
+text-align:center;
+background-color:#f93822ff;
+margin:30px;
+border-radius:5px;
+}
+#navbar ul li{
+display:inline; 
+}
+
+#navbar ul li a{
+text-decoration:none;
+font-family:Arial;
+
+padding: .2em 7em;
+color:#fff;
+background-color:#f93822ff;
+}
+#navbar ul li a:hover{
+color:#000;
+background-color:#FFD700;
+}
+
+#navbar ul li a:active{
+color:#000;
+background-color:#fff;
+}
+
+
+    </style>
+</head>
+<body style="background-color:#FFD700">
+      <div id="navbar">
+     <ul>
+      <li><a href="/Doctor/doclogin/bcancer"><b>Breast Cancer</b></a></li>   
+      <li><a href="/Doctor/doclogin/dia"><b>Diabetes</b></a></li>
+      
+      <li><a href=""><b>Heart</b></a></li>
+     
+      <li><a href="/"><b>Log Out</b></a></li>
+     </ul>
+    </div>
+   
+
+<center><h1>Heart</h1></center>
+<center><h2>Fill EMR Data of Patient</h2></center>
+<center><p>Please fill in this form Heart.</p></center>
+
+<form action="" method="post">
+<center><table  cellspacing="10" cellpadding="5" style="background-color:white;">
+<tr>
+<td><label for="name"><b>Full Name</b></label></td>
+<td><input type="text" style="font-size:12px; padding:10px;" id="name" name="pnam" size="60" placeholder="Enter Full Name"></td>
+</tr>
+<tr>
+<td><label for="aid-no"><b>AID</b></label></td>
+<td><input type="tel" style="font-size:12px; padding:10px;" id="aid-no" name="aid_no" size="60" placeholder="Enter 10-digit AID Number"></td>
+</tr>
+<tr>
+<tr>
+<td><label for="email"><b>Email</b></label></td>
+<td><input type="email" style="font-size:12px; padding:10px;" id="email" name="email" size="60" placeholder="Enter Email"></td>
+</tr>
+<tr>
+<td><label for="age"><b>Age</b></label></td>
+<td><input type="text" style="font-size:12px; padding:10px;" id="age" name="page" size="60" placeholder="Enter Age"></td>
+</tr>
+<tr>
+<td><label for="sex"><b>Sex</b></label></td>
+<td><input type="text" style="font-size:12px; padding:10px;" id="sex" name="psex" size="60" placeholder="Enter Sex"></td>
+</tr>
+<tr>
+<td><label for="cp"><b>cp</b></label></td>
+<td><input type="text" style="font-size:12px; padding:10px;" id="cp" name="cp" size="60" placeholder="Enter cp"></td>
+</tr>
+<tr>
+<td><label for="trestbps"><b>trsetbps</b></label></td>
+<td><input type="text" style="font-size:12px; padding:10px;" id="trestbps" name="trestbps" size="60" placeholder="Enter trestbps"></td>
+</tr>
+<tr>
+<td><label for="chol"><b>chol</b></label></td>
+<td><input type="text" style="font-size:12px; padding:10px;" id="chol" name="chol" size="60" placeholder="Enter chol"></td>
+</tr>
+<tr>
+<td><label for="fbs"><b>fbs</b></label></td>
+<td><input type="text" style="font-size:12px; padding:10px;" id="fbs" name="fbs" size="60" placeholder="Enter fbs"></td>
+</tr>
+<tr>
+<td><label for="restecg"><b>restecg</b></label></td>
+<td><input type="text" style="font-size:12px; padding:10px;" id="restecg" name="restecg" size="60" placeholder="Enter restecg"></td>
+</tr>
+<tr>
+<td><label for="thalach"><b>thalach</b></label></td>
+<td><input type="text" style="font-size:12px; padding:10px;" id="thalach" name="thalach" size="60" placeholder="Enter thalach"></td>
+</tr>
+<tr>
+<td><label for="exang"><b>exang</b></label></td>
+<td><input type="text" style="font-size:12px; padding:10px;" id="exang" name="exang" size="60" placeholder="Enter exang"></td>
+</tr>
+<tr>
+<td><label for="oldpeak"><b>oldpeak</b></label></td>
+<td><input type="text" style="font-size:12px; padding:10px;" id="oldpeak" name="oldpeak" size="60" placeholder="Enter oldpeak"></td>
+</tr>
+<tr>
+<td><label for="slope"><b>slope</b></label></td>
+<td><input type="text" style="font-size:12px; padding:10px;" id="slope" name="slope" size="60" placeholder="Enter slope"></td>
+</tr>
+<tr>
+<td><label for="ca"><b>ca</b></label></td>
+<td><input type="text" style="font-size:12px; padding:10px;" id="ca" name="ca" size="60" placeholder="Enter ca"></td>
+</tr>
+<tr>
+<td><label for="thal"><b>thal</b></label></td>
+<td><input type="text" style="font-size:12px; padding:10px;" id="thal" name="thal" size="60" placeholder="Enter thal"></td>
+</tr>
+</table></center>
+<br><br>
+<center><input type="submit" value="Predict"></center>
+</form>
+</body>
+</html>

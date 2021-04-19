@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<body>
+<center><h1 style="font-size:27px; background-color:orange">Login</h1></center>
+<form action="doclogin" method="post">
+{% csrf_token %}
+<br><br><br><br><br><br><br><br>
+<center>ID No. &nbsp &nbsp &nbsp<input type="text" name="logId"></center><br><br>
+<center>Password &nbsp<input type="password" name="logPw"></center><br><br>
+<center><input type="Submit" value="Login"></center>
+</form>
+</body>
+</html>
+
+

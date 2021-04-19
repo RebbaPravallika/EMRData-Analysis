@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<style>
+</style>
+</head>
+<body bgcolor="yellow">
+<center><h1>Doctor Register</h1></center>
+<center><h2>Welcome To Registration Page</h2></center>
+<center><p>Please fill in this form to create an account.</p></center>
+<form action="docregister" method="post">
+{% csrf_token %}
+<center><table  cellspacing="10" cellpadding="10" style="background-color:white;">
+<tr>
+<td><label for="id_no"><b>Doctor ID</b></label></td>
+<td><input type="text" style="font-size:12px; padding:10px;" id="id_no" name="id_no" size="60" placeholder="Enter Employee ID"></td>
+</tr>
+<tr>
+<td><label for="name"><b>Full Name</b></label></td>
+<td><input type="text" style="font-size:12px; padding:10px;" id="name" name="nam" size="60" placeholder="Enter Full Name"></td>
+</tr>
+<tr>
+<td><label for="department"><b>Department</b></label></td>
+<td><input type="text" style="font-size:12px; padding:10px;" id="department" name="department" size="60" placeholder="Enter Department"></td>
+</tr>
+<tr>
+<td><label for="hospital"><b>Hospital Name</b></label></td>
+<td><input type="text" style="font-size:12px; padding:10px;" id="hospital" name="hospital" size="60" placeholder="Enter Hospital Name"></td>
+</tr>
+<tr>
+<td><label for="contact-no"><b>Contact</b></label></td>
+<td><input type="tel" style="font-size:12px; padding:10px;" id="contact-no" name="contact-no" size="60" placeholder="Enter 10-digit Contact Number"></td>
+</tr>
+<tr>
+<td><label for="email"><b>Email Address</b></label></td>
+<td><input type="email" style="font-size:12px; padding:10px;" id="email" name="email" size="60" placeholder="Enter Email"></td>
+</tr>
+<tr>
+<td><label for="password"><b>Password</b></label></td>
+<td><input type="password" style="font-size:12px; padding:10px;" id="password" name="password" size="60" placeholder="Length more than 6 characters (atleast one uppercase, one lowercase)"></td>
+</tr>
+<tr>
+<td><label for="cpassword"><b>Confirm Password</b></label></td>
+<td><input type="password" style="font-size:12px; padding:10px;" id="cpassword" name="cpassword" size="60" placeholder="Confirm Password"></td>
+</tr>
+<tr>
+<td><b>Gender</b></td>
+<td><input type="radio" name="gen" value="">Male&nbsp;&nbsp;&nbsp;<input type="radio" name="gen" value="">Female&nbsp;&nbsp;&nbsp;<input type="radio" name="gen" value="">Other</td>
+</tr>
+</table></center>
+<center><p>By creating an account, you agree to our <a href="">Terms & Privacy.</a></center>
+<br><br>
+<center><input type="Submit" value="Register" ></center>
+</form>
+
+</body>
+</html>

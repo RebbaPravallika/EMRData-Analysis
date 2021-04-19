@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #header{
+background-color:#f93822ff ;
+margin:10px;
+height:70px;
+border-radius:5px;
+font-family:Verdana,Georgia;
+padding:5px;
+color:white;
+}
+
+        #navbar ul{
+        padding:5px;
+list-style-type:none;
+text-align:center;
+background-color:#f93822ff;
+margin:10px;
+border-radius:5px;
+}
+#navbar ul li{
+display:inline; 
+}
+#navbar ul li a{
+text-decoration:none;
+font-family:Arial;
+padding: .2em 1em;
+color:#fff;
+background-color:#f93822ff;
+}
+#navbar ul li a:hover{
+color:#000;
+background-color:#FFD700;
+}
+
+#navbar ul li a:active{
+color:#000;
+background-color:#fff;
+}
+
+
+    </style>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+</head>
+<body style="background-color:#FFD700">
+	<div id="header">
+     <center><h2>emrdataanalysis.com</h2></center>
+    </div>
+
+    <div id="navbar">
+     <ul>
+      <li><a href="/"><b>Home</b></a></li>
+     
+      <li><a href=""><b>Contact</b></a></li>
+      <li><a href=""><b>News</b></a></li>
+     </ul>
+    </div>
+    <table border="0" cellspacing="0" width="100%" cellpadding="10">
+    	<tr>
+    		<td><a href="https://www.medicalnewstoday.com/">
+            <img src="{% static 'images/news1.png' %}" alt="my picture" height="250" width="250" class="newsimg" />
+            </a>
+
+    		</td>
+    		<td><a href="https://main.mohfw.gov.in/">
+            <img src="{% static 'images/news2.jpg' %}" alt="my picture" height="250" width="250" class="newsimg" />
+            </a></td>
+            <td><a href="https://www.who.int/">
+            <img src="{% static 'images/news3.png' %}" alt="my picture" height="250" width="250"  class="newsimg" />
+            </a></td>
+
+            <td><a href="https://aarogyasri.telangana.gov.in/">
+            <img src="{% static 'images/news4.png' %}" alt="my picture" height="250" width="250"  class="newsimg" />
+             </a></td>
+             <td><a href="https://www.nih.gov/">
+            <img src="{% static 'images/news5.png' %}" alt="my picture" height="250" width="250"  class="newsimg" />
+             </a></td>
+
+    		
+    	</tr>
+    </table>
+	
+</body>
+</html>

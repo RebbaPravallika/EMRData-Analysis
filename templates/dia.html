@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #navbar ul{
+        padding:5px;
+list-style-type:none;
+text-align:center;
+background-color:#f93822ff;
+margin:30px;
+border-radius:5px;
+}
+#navbar ul li{
+display:inline; 
+}
+
+#navbar ul li a{
+text-decoration:none;
+font-family:Arial;
+
+padding: .2em 7em;
+color:#fff;
+background-color:#f93822ff;
+}
+#navbar ul li a:hover{
+color:#000;
+background-color:#FFD700;
+}
+
+#navbar ul li a:active{
+color:#000;
+background-color:#fff;
+}
+
+
+    </style>
+</head>
+<body style="background-color:#FFD700">
+    
+    
+    
+ 
+    <div id="navbar">
+     <ul>
+      <li><a href="/Doctor/doclogin/bcancer"><b>Breast Cancer</b></a></li>   
+      <li><a href=""><b>Diabetes</b></a></li>
+      <li><a href="/Doctor/doclogin/heart"><b>Heart</b></a></li>
+      <li><a href="/"><b>Log Out</b></a></li>
+     </ul>
+    </div>
+    
+    
+<center><h1>Diabetes</h1></center>
+<center><h2>Fill EMR Data of Patient</h2></center>
+<center><p>Please fill in the diabetes form.</p></center>
+
+<form action="" method="post">
+{% csrf_token %}
+<center><table  cellspacing="10" cellpadding="5" style="background-color:white;">
+<tr>
+<td><label for="name"><b>Full Name</b></label></td>
+<td><input type="text" style="font-size:12px; padding:10px;" id="name" name="pnam" size="60" placeholder="Enter Full Name"></td>
+</tr>
+<td><label for="age"><b>Age</b></label></td>
+<td><input type="number" min=0 style="font-size:12px; padding:10px;" id="age" name="age" size="60" placeholder="Enter age"></td>
+</tr>
+<tr>
+<td><label for="glucose"><b>Glucose</b></label></td>
+<td><input type="number" step=any min=0 style="font-size:12px; padding:10px;" id="glucose" name="glucose" size="60" placeholder="Enter glucose level"></td>
+</tr>
+<tr>
+<tr>
+<td><label for="insulin"><b>Insulin</b></label></td>
+<td><input type="number" min=0 style="font-size:12px; padding:10px;" id="insulin" name="insulin" size="60" placeholder="Enter 2-hr serum insulin"></td>
+</tr>
+<tr>
+<td><label for="bmi"><b>BMI</b></label></td>
+<td><input type="number" min=0 step=any style="font-size:12px; padding:10px;" id="bmi" name="bmi" size="60" placeholder="Enter BMI"></td>
+</tr>
+<tr>
+<td><label for="pedigree"><b>Diabetes Pedigree</b></label></td>
+<td><input type="number" min=0 step=0.001 style="font-size:12px; padding:10px;" id="pedigree" name="pedigree" size="60" placeholder="Enter diabtes pedigree"></td>
+</tr>
+<tr>
+<tr>
+<td><label for="pregnancies"><b>No: of Pregnancies</b></label></td>
+<td><input type="number" min=0 style="font-size:12px; padding:10px;" id="pregnancies" name="pregnancies" size="60" placeholder="Enter value"></td>
+</tr>
+<tr>
+<td><label for="SkinThickness"><b>SkinThickness</b></label></td>
+<td><input type="number" min=0 style="font-size:12px; padding:10px;" id="SkinThickness" name="SkinThickness" size="60" placeholder="Enter value"></td>
+</tr>
+<tr>
+<td><label for="bp"><b>Blood Pressure</b></label></td>
+<td><input type="number" min=0 style="font-size:12px; padding:10px;" id="bp" name="bp" size="60" placeholder="Enter fbs"></td>
+</tr>
+</table></center>
+<br><br>
+<center><input type="submit" value="Predict"></center>
+</form>
+</body>
+</html>

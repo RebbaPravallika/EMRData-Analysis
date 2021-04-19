@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<body>
+<h1 style="font-size:24px; background-color:orange">Register Yourself</h1>
+<form action="reg_pat">
+<table  cellspacing="10" cellpadding="10">
+<tr>
+<td><label for="name">Name</label></td>
+<td><input type="text" id="name" name="pnam"></td>
+</tr>
+<tr>
+<td>Date of Birth</td>
+<td><input type="date" name="pdob"></td>
+</tr>
+<tr>
+<td>Gender</td>
+<td><input type="radio" name="pgen" value="">Male<input type="radio" name="gen" value="">Female<input type="radio" name="gen" value="">Others</td>
+</tr>
+<tr>
+<td><label for="phone">Contact Number</label></td>
+<td><select><option value="+91">+91</option><option value="+1">+1</option><option value="+61">+61</option><option value="+44">+44</option><option value="+49">+49</option></select><input type="tel" id="phone" name="pphone" placeholder="xxxxxxxxxx" pattern="[0-9]{10}"></td> 
+</tr>
+<tr>
+<td><label for="email">Email Address</label></td>
+<td><input type="email" id="email" name="pemail"></td>
+</tr>
+<tr>
+<td><label for="add">Address</label></td>
+<td><textarea id="add" name="address" rows="4" cols="50"></textarea></td>
+</tr>
+<tr>
+<td><input type="Submit" value="Register"></td>
+</tr>
+</form>
+</body>
+</html>

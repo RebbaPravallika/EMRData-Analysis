@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    #header{
+background-color:#f93822ff ;
+margin:10px;
+height:70px;
+border-radius:5px;
+font-family:Verdana,Georgia;
+padding:5px;
+color:white;
+}
+
+        #navbar ul{
+        padding:5px;
+list-style-type:none;
+text-align:center;
+background-color:#f93822ff;
+margin:10px;
+border-radius:5px;
+}
+#navbar ul li{
+display:inline; 
+}
+#navbar ul li a{
+text-decoration:none;
+font-family:Arial;
+padding: .2em 1em;
+color:#fff;
+background-color:#f93822ff;
+}
+#navbar ul li a:hover{
+color:#000;
+background-color:#FFD700;
+}
+
+#navbar ul li a:active{
+color:#000;
+background-color:#fff;
+}
+
+
+    </style>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>
+		
+	</title>
+	<link rel="stylesheet" href="{% static 'styles/styles.css' %}" type="text/css">
+</head>
+<body style="background-color:#FFD700">
+    
+    
+    
+    <div id="header">
+     <center><h2>emrdataanalysis.com</h2></center>
+    </div>
+
+    <div id="navbar">
+     <ul>
+      <li><a href=""><b>Home</b></a></li>
+        
+      <li><a href=""><b>Contact</b></a></li>
+      <li><a href="/news"><b>News</b></a></li>
+     </ul>
+    </div>
+	
+	
+	<center><table border="0" cellspacing="0"   width="97%" cellpadding="0">
+		<tr width="100%" height="500px">
+			<td  align="center" width="100%" align="center" ><div class="container"><img src="{% static 'images/healthcare.jpg' %}" height="500px"
+				width="100%">
+				<div class="centered"><b><i><font color="#848482">An</font> <font color="#FFD700">Excellent</font> <font color="#848482">way for Diagnosing Symptoms</font>
+				</i></b></div>
+				
+			</div></td>	
+		</tr>
+	</table></center>
+	<br>
+	<center><table width="97%">
+		<tr width="100%" bgcolor="#FFD700">
+			<td height="180px" align="center"  align="center" bgcolor="#FFD700" ><img src="{% static 'images/doctor.jpg' %}" class="img" 
+				width="30%"><br><a href="Doctor/doclogin" class="button"><b>Login</b></a><br><a href="Doctor/docregister" class="button"><b>Register</b></a></td>
+			<td align="center" class="quote"><b><i>Diagnosis is a combination<br>of an ounce of Knowledge,<br>an ounce of Intelligence<br>and a pound of<br>Throughness 
+				
+			</td>
+			<td height="180px" align="center" bgcolor="#FFD700" ><img src="{% static 'images/patient.png' %}" class="img" 
+				width="30%"><br><a href="" class="button"><b>Login</b></a><br><a href="" class="button"><b>Register</b></a></td>
+
+		</tr>
+	</table></center>
+	
+</body>
+</html>
+
+				
+	

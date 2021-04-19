@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #navbar ul{
+        padding:5px;
+list-style-type:none;
+text-align:center;
+background-color:#f93822ff;
+margin:30px;
+border-radius:5px;
+}
+#navbar ul li{
+display:inline; 
+}
+
+#navbar ul li a{
+text-decoration:none;
+font-family:Arial;
+
+padding: .2em 7em;
+color:#fff;
+background-color:#f93822ff;
+}
+#navbar ul li a:hover{
+color:#000;
+background-color:#FFD700;
+}
+
+#navbar ul li a:active{
+color:#000;
+background-color:#fff;
+}
+
+
+    </style>
+</head>
+<body style="background-color:#FFD700">
+    
+    
+    
+ 
+    <div id="navbar">
+     <ul>
+      <li><a href=""><b>Breast Cancer</b></a></li>   
+      <li><a href="/Doctor/doclogin/dia"><b>Diabetes</b></a></li>
+      <li><a href="/Doctor/doclogin/heart"><b>Heart</b></a></li>
+      <li><a href="/"><b>Log Out</b></a></li>
+     </ul>
+    </div>
+    
+    
+<center><h1>Breast Cancer</h1></center>
+<center><h2>Fill EMR Data of Patient</h2></center>
+<center><p>Please fill in the Breast Cancer form.</p></center>
+
+<form action="" method="post">
+{% csrf_token %}
+<center><table  cellspacing="10" cellpadding="5" style="background-color:white;">
+<tr>
+<td><label for="name"><b>Full Name</b></label></td>
+<td><input type="text" style="font-size:12px; padding:10px;" id="name" name="pnam" size="60" placeholder="Enter Full Name"></td>
+</tr>
+<tr>
+<tr>
+<td><label for="email"><b>Email</b></label></td>
+<td><input type="text" style="font-size:12px; padding:10px;" id="email" name="email" size="60" placeholder="Enter Email"></td>
+</tr>
+<tr>
+<tr>
+<td><label for="age"><b>Age</b></label></td>
+<td><input type="number" min=0 style="font-size:12px; padding:10px;" id="age" name="age" size="60" placeholder="Enter age"></td>
+</tr>
+<tr>
+<tr>
+<td><label for="mean_radius"><b>Mean Radius</b></label></td>
+<td><input type="number" step=any min=0 style="font-size:12px; padding:10px;" id="mean_radius" name="mean_radius" size="60" placeholder="Enter mean radius"></td>
+</tr>
+<tr>
+<tr>
+<td><label for="mean_texture"><b>Mean Texture</b></label></td>
+<td><input type="number" step=any min=0 style="font-size:12px; padding:10px;" id="mean_texture" name="mean_texture" size="60" placeholder="Enter mean texture"></td>
+</tr>
+<tr>
+<tr>
+<td><label for="mean_perimeter"><b>Mean Perimeter</b></label></td>
+<td><input type="number" min=0 style="font-size:12px; padding:10px;" id="mean_perimeter" name="mean_perimeter" size="60" placeholder="Enter mean perimeter"></td>
+</tr>
+<tr>
+<tr>
+<td><label for="mean_area"><b>Mean Area</b></label></td>
+<td><input type="number" min=0 step=any style="font-size:12px; padding:10px;" id="mean_area" name="mean_area" size="60" placeholder="Enter mean area"></td>
+</tr>
+<tr>
+<tr>
+<td><label for="mean_smoothness"><b>Mean Smoothness</b></label></td>
+<td><input type="number" step=any min=0 style="font-size:12px; padding:10px;" id="mean_smoothness" name="mean_smoothness" size="60" placeholder="Enter mean smoothness"></td>
+</tr>
+</table></center>
+<br><br>
+<center><input type="submit" value="Predict"></center>
+</form>
+</body>
+</html>
